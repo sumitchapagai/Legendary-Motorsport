@@ -1,0 +1,101 @@
+/*   Stock   */
+
+.stock-container {
+  width: var(--view-width);
+  margin-inline: auto;
+  background-color: rebeccapurple;
+}
+
+.stock-nav {
+  padding-inline: var(--gap-inline);
+  padding-block: var(--gap-block);
+}
+
+.stock-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock-nav-list li {
+  min-width: 18%;
+  background-color: var(--btn-color);
+}
+
+.stock-nav-list li button {
+  width: 100%;
+}
+
+.stock-section {
+  padding-inline: var(--gap-inline);
+  padding-block: var(--gap-block);
+}
+
+.stock-section-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/*   Stock - Card   */
+
+.card {
+  display: inline-flex;
+  flex-flow: column;
+  height: 200px;
+  background-color: gray;
+}
+
+/*   ||   Making Card Category 3 parts to add background 2 half's effect  */
+.card-category::before {
+  height: 50%;
+  width: 100%;
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 0;
+}
+
+.card-category {
+  display: inline;
+  text-align: center;
+  position: relative;
+  height: 22%;
+}
+
+.card-category::after {
+  width: 100%;
+  height: 100%;
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0.9;
+  display: grid;
+  place-content: center;
+  font-size: 1.3rem;
+}
+
+.card-img {
+  height: 60%;
+}
+
+.card-description-btn {
+  height: 18%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-description {
+  margin-block: auto;
+  margin-inline-start: 9%;
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.card-btn {
+  width: 35%;
+  height: 100%;
+}

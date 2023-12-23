@@ -1,0 +1,210 @@
+{
+  "featured": [
+    {
+      "id": 1,
+      "model": "GROTTI TURISMO OMAGGIO",
+      "category": "PART OF THE CHOP SHOP",
+      "price": 2845000,
+      "seat": 2
+    },
+    {
+      "id": 2,
+      "model": "VAPID ALEUTIAN",
+      "category": "PART OF THE CHOP SHOP",
+      "price": 1835000,
+      "seat": 4
+    },
+    {
+      "id": 3,
+      "model": "PENAUD LA COUREUSE",
+      "category": "PART OF SAN ANDREAS MERCENARIES",
+      "price": 1990000,
+      "seat": 2
+    },
+    {
+      "id": 4,
+      "model": "BRAVADO BUFFALO EVX",
+      "category": "PART OF SAN ANDREAS MERCENARIES",
+      "price": 2140000,
+      "seat": 2
+    },
+    {
+      "id": 5,
+      "model": "GROTTI ITALI GTO STINGE",
+      "category": "PART OF SAN ANDREAS MERCENARIES",
+      "price": 2380000,
+      "seat": 2
+    }
+  ],
+  "2 door": [
+    {
+      "id": 1,
+      "model": "GROTTI TURISMO OMAGGIO",
+      "category": "PART OF THE CHOP SHOP",
+      "price": 2845000,
+      "seat": 2
+    },
+    {
+      "id": 2,
+      "model": "PENAUD LA COUREUSE",
+      "category": "PART OF SAN ANDREAS MERCENARIES",
+      "price": 1990000,
+      "seat": 2
+    },
+    {
+      "id": 3,
+      "model": "BRAVADO BUFFALO EVX",
+      "category": "PART OF SAN ANDREAS MERCENARIES",
+      "price": 2845000,
+      "seat": 2
+    },
+    {
+      "id": 4,
+      "model": "GROTTI ITALI GTO STINGE",
+      "category": "PART OF SAN ANDREAS MERCENARIES",
+      "price": 2380000,
+      "seat": 2
+    },
+    {
+      "id": 5,
+      "model": "OCELOT VIRT",
+      "category": "PART OF LOS SANTOS DRUG WARS",
+      "price": 2980000,
+      "price 2": 2235000,
+      "seat": 2
+    },
+    {
+      "id": 6,
+      "model": "TOUNDRA PANTHERE",
+      "category": "PART OF LOS SANTOS DRUG WARS",
+      "price": 2170000,
+      "seat": 2
+    },
+    {
+      "id": 7,
+      "model": "CLASSIQUE BROADWAY",
+      "category": "PART OF LOS SANTOS DRUG WARS",
+      "price": 925000,
+      "seat": 4
+    }
+  ],
+  "4 door": [
+    {
+      "id": 1,
+      "model": "VAPID ALEUTIAN",
+      "category": "PART OF THE CHOP SHOP",
+      "price": 1835000,
+      "seat": 4
+    },
+    {
+      "id": 2,
+      "model": "OBEY OMNIS E-GT",
+      "category": "PART OF THE CRIMINAL ENTERPRISES",
+      "price": 1795000,
+      "seat": 4
+    },
+    {
+      "id": 3,
+      "model": "GALLIVANTER BALLER ST",
+      "category": "PART OF THE CONTRACT",
+      "price": 667500,
+      "seat": 4
+    },
+    {
+      "id": 4,
+      "model": "PFISTER ASTRON",
+      "category": "PART OF THE CONTRACT",
+      "price": 1580000,
+      "seat": 4
+    },
+    {
+      "id": 5,
+      "model": "LAMPADATI CINQUEMILA",
+      "category": "PART OF THE CONTRACT",
+      "price": 1740000,
+      "seat": 4
+    },
+    {
+      "id": 6,
+      "model": "ENUS JUBILEE",
+      "category": "PART OF THE CONTRACT",
+      "price": 1237500,
+      "seat": 4
+    }
+  ],
+  "motorcycles": [
+    {
+      "id": 1,
+      "model": "WESTERN POWERSURGE",
+      "category": "PART OF LOS SANTOS DAUG WARS",
+      "price": 1605000,
+      "seat": 1
+    },
+    {
+      "id": 2,
+      "model": "WESTERN REEVER",
+      "category": "PART OF THE CONTRACT",
+      "price": 1900000,
+      "seat": 1
+    },
+    {
+      "id": 3,
+      "model": "NAGASAKI SHINOBI",
+      "category": "PART OF THE CONTRACT",
+      "price": 2480500,
+      "seat": 1
+    },
+    {
+      "id": 4,
+      "model": "NAGASAKI STRYD",
+      "category": "PART OF THE DIAMOND CASINO HEIST",
+      "price": 502500,
+      "price 2": 670000,
+      "seat": 2
+    },
+    {
+      "id": 5,
+      "model": "WESTERN RAMPANT ROCKET",
+      "category": "PART OF THE DIAMOND CASINO & RESORT",
+      "price": 925000,
+      "seat": 1
+    },
+    {
+      "id": 6,
+      "model": "NAGASAKI SHOTARO",
+      "category": "PART OF BIKERS",
+      "price": 2225000,
+      "seat": 1
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "model": "BENEFACTOR BRB",
+      "category": "PART OF LOS SANTOS SUMMER SPECIAL",
+      "price": 3400000,
+      "seat": 1
+    },
+    {
+      "id": 2,
+      "model": "DECLASSE DRI",
+      "category": "PART OF LOS SANTOS SUMMER SPECIAL",
+      "price": 2997000,
+      "seat": 1
+    },
+    {
+      "id": 3,
+      "model": "PROGEN PR4",
+      "category": "PART OF THE DIAMOND CASINO HEIST",
+      "price": 3515000,
+      "seat": 1
+    },
+    {
+      "id": 4,
+      "model": "OCELOT R88",
+      "category": "PART OF THE DIAMOND CASINO HEIST",
+      "price": 3115000,
+      "seat": 1
+    }
+  ]
+}

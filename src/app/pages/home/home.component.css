@@ -1,0 +1,27 @@
+/*   Header   */
+
+header {
+  width: var(--view-width);
+  height: 40vh;
+  margin-inline: auto;
+  display: grid;
+  place-content: end;
+  padding-inline: var(--gap-inline);
+  margin-block-end: var(--gap-block);
+}
+
+.header-filter-btn span {
+  padding: 2.2rem;
+}
+
+/*   Main   */
+
+/*   Footer   */
+
+footer aside {
+}
+
+footer aside img {
+  width: 100%;
+  height: 10%;
+}

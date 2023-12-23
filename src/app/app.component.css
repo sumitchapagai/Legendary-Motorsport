@@ -1,0 +1,45 @@
+/*  Reset  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/*  Variable  */
+:root {
+  --view-width: 71vw;
+  --gap-inline: 2rem;
+  --gap-block: 0.5rem;
+
+  --btn-color: #ff0000;
+  --btn-color-hover: #fff;
+  --btn-color-selected: #ff0000;
+}
+
+/*  Common Styles  */
+button {
+  border: none;
+  background-color: var(--btn-color);
+  height: 2.8rem;
+  /*nav btn width in stock.component*/
+}
+
+body {
+  background-color: #ff000056;
+}

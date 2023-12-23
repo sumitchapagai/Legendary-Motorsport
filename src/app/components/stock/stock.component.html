@@ -1,0 +1,63 @@
+<main class="stock-container">
+  <nav class="stock-nav">
+    <ul class="stock-nav-list">
+      <li>
+        <button class="stork-nav-btn" (click)="updateCurrentList('featured')">
+          Featured
+        </button>
+      </li>
+      <li>
+        <button class="stork-nav-btn" (click)="updateCurrentList('2 door')">
+          2 Doors
+        </button>
+      </li>
+      <li>
+        <button class="stork-nav-btn" (click)="updateCurrentList('4 door')">
+          4 Doors
+        </button>
+      </li>
+      <li>
+        <button
+          class="stork-nav-btn"
+          (click)="updateCurrentList('motorcycles')"
+        >
+          Motorcycles
+        </button>
+      </li>
+      <li>
+        <button class="stork-nav-btn" (click)="updateCurrentList('special')">
+          Special
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <section class="stock-section">
+    <ng-container *ngIf="currentList; else currentListUndefined">
+      <ol class="stock-section-list" #store>
+        <div *ngFor="let currentItem of currentList">
+          <li>
+            <article class="card">
+              <h2
+                class="card-category"
+                [attr.data-title]="currentItem.category"
+              ></h2>
+              <img
+                class="card-img"
+                src="https://placehold.jp/150x150.png"
+                width="250"
+                height="120"
+              />
+              <div class="card-description-btn">
+                <p class="card-description">
+                  {{ currentItem.model }}
+                </p>
+                <button class="card-btn">${{ currentItem.price }}</button>
+              </div>
+            </article>
+          </li>
+        </div>
+      </ol></ng-container
+    >
+    <ng-template #currentListUndefined><p>Loading...</p></ng-template>
+  </section>
+</main>
