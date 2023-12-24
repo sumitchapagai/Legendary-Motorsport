@@ -38,6 +38,7 @@
           <li>
             <article class="card">
               <h2
+                [routerLink]="['details', currentItem.id]"
                 class="card-category"
                 [attr.data-title]="currentItem.category"
               ></h2>
@@ -58,6 +59,8 @@
         </div>
       </ol></ng-container
     >
-    <ng-template #currentListUndefined><p>Loading...</p></ng-template>
+    <ng-template #currentListUndefined
+      ><p>Something went wrong in stock....</p></ng-template
+    >
   </section>
 </main>

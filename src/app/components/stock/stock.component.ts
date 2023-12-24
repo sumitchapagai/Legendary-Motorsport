@@ -1,14 +1,6 @@
 import { Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
-import { Observable, find, map, take } from 'rxjs';
 import { Store } from 'src/app/service/store';
-
-type car = {
-  id: number;
-  model: string;
-  category: string;
-  price: number;
-  seat: number;
-};
+import { car } from 'src/app/util/internalTypes';
 
 @Component({
   selector: 'app-stock',
@@ -18,9 +10,9 @@ type car = {
 })
 export class StockComponent implements DoCheck {
   selectedFilter: string;
-  currentList: car[] | undefined;
+  currentList!: car[];
 
-  // length of carList$
+  // length of currentList
   listCount: number;
   /**
    *  Containes Object with keys as Home page navigation buttons
@@ -36,9 +28,6 @@ export class StockComponent implements DoCheck {
    * }
    * */
 
-  carList$!: Observable<{
-    [index: string]: car[];
-  }>;
   // Element stores the cars list (ol).
   @ViewChild('store') storeElement!: ElementRef;
 
@@ -49,44 +38,46 @@ export class StockComponent implements DoCheck {
 
   // get data from store
   ngOnInit(): void {
-    this.carList$ = this.store.getList();
-    this.carList$.pipe(take(1)).subscribe((list) => {
-      this.listCount = list['featured'].length;
-      this.currentList = list[this.selectedFilter];
+    this.store.getList(this.selectedFilter).then((data: car[]) => {
+      this.currentList = data;
+      this.listCount = this.currentList.length;
       this.updateScreenWidth();
     });
   }
 
   updateCurrentList(filter: string) {
-    console.log(this.currentList![0].id);
     this.selectedFilter = filter;
-    this.carList$
-      .pipe(
-        take(1),
-        map((list) => list[this.selectedFilter])
-      )
-      .subscribe((filteredItem) => {
-        this.currentList = filteredItem;
-        console.log(this.currentList);
-        this.updateScreenWidth();
-      });
+    this.store.getList(this.selectedFilter).then((data: car[]) => {
+      this.currentList = data;
+      this.listCount = this.currentList.length;
+      this.updateScreenWidth();
+    });
   }
 
   /**
    *  HTML ELEMENT ID = "store"
-   *
+   *  Manages the background image height for main element
    */
   updateScreenWidth(): void {
+    // ...
     // Dynamically adding background to construct the background Image
-    if (this.storeElement && this.listCount)
+    /* if (this.storeElement && this.listCount) {
+      console.log(this.listCount);
       (this.storeElement.nativeElement as HTMLOListElement).style.height = `${
-        Math.round((this.listCount + 0.5) / 3) * 210
+        Math.round((this.listCount + 0.5) / 3) * 220
       }px`;
+    } */
+    /*  */
   }
 
+  // Catches if data dosen't exists
+  // May catch error if forgot to change listcount
   ngDoCheck(): void {
-    if (!this.listCount && this.currentList) {
-      throw new Error('Something went wrong.');
+    if (
+      (!this.listCount && this.currentList) ||
+      (this.listCount && this.listCount !== this.currentList?.length)
+    ) {
+      throw new Error('Stock.component.ts ngDoCheck');
     }
   }
 }

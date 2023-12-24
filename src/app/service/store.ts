@@ -2,7 +2,8 @@
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, take } from 'rxjs';
+import { car } from '../util/internalTypes';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,15 @@ import { Observable } from 'rxjs';
 export class Store {
   constructor(private http: HttpClient) {}
 
-  getList(): Observable<any> {
-    return this.http.get('assets/data/car-list.json');
+  getList(filter: string): Promise<car[]> {
+    return new Promise((resolve) => {
+      this.http
+        .get('assets/data/car-list.json')
+        .pipe(
+          take(1),
+          map((list: any) => list[filter] as car[])
+        )
+        .subscribe((data) => resolve(data));
+    });
   }
 }
