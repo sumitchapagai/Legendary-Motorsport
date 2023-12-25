@@ -62,10 +62,10 @@ header {
   margin: 0.6rem 1.2rem;
 }
 
-.progress {
+.stats {
   margin-top: var(--gap-block);
 }
-.progress-description {
+.stats-description {
   margin-top: var(--gap-block);
   margin-left: 1.2rem;
 }
@@ -84,7 +84,7 @@ header {
     "description-p img"
     "description-p img"
     "color-picker img"
-    "progress img"
+    "stats img"
     "btn img";
 }
 
@@ -100,8 +100,8 @@ header {
   grid-area: color-picker;
 }
 
-.progress {
-  grid-area: progress;
+.stats {
+  grid-area: stats;
 }
 
 .btn {

@@ -1,19 +1,16 @@
 <header>
-  <article class="details title-container">
-    <h1 class="title">Trurismo Omaggio</h1>
-    <p class="cost">$2,845,000</p>
+  <article
+    *ngIf="carDetails; else carDetailsUndefined"
+    class="details title-container"
+  >
+    <h1 class="title">{{ carDetails.model }}</h1>
+    <p class="cost">${{ carDetails.price }}</p>
   </article>
   <section class="details description-container">
     <p class="description-p">
-      <span class="description-p-span1"
-        >In a world where it often feels wlike the best you can hope for is an
-        ealleletric gap to some hybrid porn, Grotti's stunnibbng farewell
-        tribute to the m ighty V8 is the booty call of your ot, heavy dreams. So
-        sit back and strap in for one last breath of pure gasoline as you
-        autograph the o-Zone for the final time.</span
-      >
+      <span class="description-p-span1">{{ carDetails.description }}</span>
       <span class="descriptionn-p-span2">
-        You can upgrade this vehicle with Imani Tech at an Agency Workshop.
+        {{ carDetails.conclusion }}
       </span>
     </p>
     <img class="details img" src="https://placehold.jp/400x400.png" />
@@ -28,27 +25,28 @@
         ><span class="color black"></span><span class="color white"></span>
       </div>
     </article>
-    <aside class="details progress">
-      <h2 class="details progress-title">Vehicle Status</h2>
-      <p class="details progress-description">
-        <span class="details progress-description-title">Top Speed</span
-        ><progress class="details progress-description-details"></progress>
+    <aside class="details stats">
+      <h2 class="details stats-title">Vehicle Status</h2>
+      <p class="details stats-description">
+        <span class="details stats-description-title">Top Speed</span
+        ><span class="details stats-description-details"></span>
       </p>
-      <p class="details progress-description">
-        <span class="details progress-description-title">Acceleration</span
-        ><progress class="details progress-description-details"></progress>
+      <p class="details stats-description">
+        <span class="details stats-description-title">Acceleration</span
+        ><span class="details stats-description-details"></span>
       </p>
-      <p class="details progress-description">
-        <span class="details progress-description-title">Braking</span
-        ><progress class="details progress-description-details"></progress>
+      <p class="details stats-description">
+        <span class="details stats-description-title">Braking</span
+        ><span class="details stats-description-details"></span>
       </p>
-      <p class="details progress-description">
-        <span class="details progress-description-title">Traction</span
-        ><progress class="details progress-description-details"></progress>
+      <p class="details stats-description">
+        <span class="details stats-description-title">Traction</span
+        ><span class="details stats-description-details"></span>
       </p>
     </aside>
   </section>
   <button class="details btn">order</button>
+  <ng-template #carDetailsUndefined><p>Loading...</p></ng-template>
 </header>
 <main>
   <router-outlet></router-outlet>

@@ -1,35 +1,35 @@
 {
   "featured": [
     {
-      "id": 1,
+      "id": "[car-list car] GROTTI TURISMO OMAGGIO",
       "model": "GROTTI TURISMO OMAGGIO",
       "category": "PART OF THE CHOP SHOP",
       "price": 2845000,
       "seat": 2
     },
     {
-      "id": 2,
+      "id": "[car-list car] VAPID ALEUTIAN",
       "model": "VAPID ALEUTIAN",
       "category": "PART OF THE CHOP SHOP",
       "price": 1835000,
       "seat": 4
     },
     {
-      "id": 3,
+      "id": "[car-list car] PENAUD LA COUREUSE",
       "model": "PENAUD LA COUREUSE",
       "category": "PART OF SAN ANDREAS MERCENARIES",
       "price": 1990000,
       "seat": 2
     },
     {
-      "id": 4,
+      "id": "[car-list car] BRAVADO BUFFALO EVX",
       "model": "BRAVADO BUFFALO EVX",
       "category": "PART OF SAN ANDREAS MERCENARIES",
       "price": 2140000,
       "seat": 2
     },
     {
-      "id": 5,
+      "id": "[car-list car] GROTTI ITALI GTO STINGE",
       "model": "GROTTI ITALI GTO STINGE",
       "category": "PART OF SAN ANDREAS MERCENARIES",
       "price": 2380000,
@@ -38,35 +38,35 @@
   ],
   "2 door": [
     {
-      "id": 1,
+      "id": "[car-list car] GROTTI TURISMO OMAGGIO",
       "model": "GROTTI TURISMO OMAGGIO",
       "category": "PART OF THE CHOP SHOP",
       "price": 2845000,
       "seat": 2
     },
     {
-      "id": 2,
+      "id": "[car-list car] PENAUD LA COUREUSE",
       "model": "PENAUD LA COUREUSE",
       "category": "PART OF SAN ANDREAS MERCENARIES",
       "price": 1990000,
       "seat": 2
     },
     {
-      "id": 3,
+      "id": "[car-list car] BRAVADO BUFFALO EVX",
       "model": "BRAVADO BUFFALO EVX",
       "category": "PART OF SAN ANDREAS MERCENARIES",
       "price": 2845000,
       "seat": 2
     },
     {
-      "id": 4,
+      "id": "[car-list car] GROTTI ITALI GTO STINGE",
       "model": "GROTTI ITALI GTO STINGE",
       "category": "PART OF SAN ANDREAS MERCENARIES",
       "price": 2380000,
       "seat": 2
     },
     {
-      "id": 5,
+      "id": "[car-list car] OCELOT VIRT",
       "model": "OCELOT VIRT",
       "category": "PART OF LOS SANTOS DRUG WARS",
       "price": 2980000,
@@ -74,14 +74,14 @@
       "seat": 2
     },
     {
-      "id": 6,
+      "id": "[car-list car] TOUNDRA PANTHERE",
       "model": "TOUNDRA PANTHERE",
       "category": "PART OF LOS SANTOS DRUG WARS",
       "price": 2170000,
       "seat": 2
     },
     {
-      "id": 7,
+      "id": "[car-list car] CLASSIQUE BROADWAY",
       "model": "CLASSIQUE BROADWAY",
       "category": "PART OF LOS SANTOS DRUG WARS",
       "price": 925000,
@@ -90,42 +90,42 @@
   ],
   "4 door": [
     {
-      "id": 1,
+      "id": "[car-list car] VAPID ALEUTIAN",
       "model": "VAPID ALEUTIAN",
       "category": "PART OF THE CHOP SHOP",
       "price": 1835000,
       "seat": 4
     },
     {
-      "id": 2,
+      "id": "[car-list car] OBEY OMNIS E-GT",
       "model": "OBEY OMNIS E-GT",
       "category": "PART OF THE CRIMINAL ENTERPRISES",
       "price": 1795000,
       "seat": 4
     },
     {
-      "id": 3,
+      "id": "[car-list car] GALLIVANTER BALLER ST",
       "model": "GALLIVANTER BALLER ST",
       "category": "PART OF THE CONTRACT",
       "price": 667500,
       "seat": 4
     },
     {
-      "id": 4,
+      "id": "[car-list car] PFISTER ASTRON",
       "model": "PFISTER ASTRON",
       "category": "PART OF THE CONTRACT",
       "price": 1580000,
       "seat": 4
     },
     {
-      "id": 5,
+      "id": "[car-list car] LAMPADATI CINQUEMILA",
       "model": "LAMPADATI CINQUEMILA",
       "category": "PART OF THE CONTRACT",
       "price": 1740000,
       "seat": 4
     },
     {
-      "id": 6,
+      "id": "[car-list car] ENUS JUBILEE",
       "model": "ENUS JUBILEE",
       "category": "PART OF THE CONTRACT",
       "price": 1237500,
@@ -134,28 +134,28 @@
   ],
   "motorcycles": [
     {
-      "id": 1,
+      "id": "[car-list car] WESTERN POWERSURGE",
       "model": "WESTERN POWERSURGE",
       "category": "PART OF LOS SANTOS DAUG WARS",
       "price": 1605000,
       "seat": 1
     },
     {
-      "id": 2,
+      "id": "[car-list car] WESTERN REEVER",
       "model": "WESTERN REEVER",
       "category": "PART OF THE CONTRACT",
       "price": 1900000,
       "seat": 1
     },
     {
-      "id": 3,
+      "id": "[car-list car] NAGASAKI SHINOBI",
       "model": "NAGASAKI SHINOBI",
       "category": "PART OF THE CONTRACT",
       "price": 2480500,
       "seat": 1
     },
     {
-      "id": 4,
+      "id": "[car-list car] NAGASAKI STRYD",
       "model": "NAGASAKI STRYD",
       "category": "PART OF THE DIAMOND CASINO HEIST",
       "price": 502500,
@@ -163,14 +163,14 @@
       "seat": 2
     },
     {
-      "id": 5,
+      "id": "[car-list car] WESTERN RAMPANT ROCKET",
       "model": "WESTERN RAMPANT ROCKET",
       "category": "PART OF THE DIAMOND CASINO & RESORT",
       "price": 925000,
       "seat": 1
     },
     {
-      "id": 6,
+      "id": "[car-list car] NAGASAKI SHOTARO",
       "model": "NAGASAKI SHOTARO",
       "category": "PART OF BIKERS",
       "price": 2225000,
@@ -179,28 +179,28 @@
   ],
   "special": [
     {
-      "id": 1,
+      "id": "[car-list car] BENEFACTOR BRB",
       "model": "BENEFACTOR BRB",
       "category": "PART OF LOS SANTOS SUMMER SPECIAL",
       "price": 3400000,
       "seat": 1
     },
     {
-      "id": 2,
+      "id": "[car-list car] DECLASSE DRI",
       "model": "DECLASSE DRI",
       "category": "PART OF LOS SANTOS SUMMER SPECIAL",
       "price": 2997000,
       "seat": 1
     },
     {
-      "id": 3,
+      "id": "[car-list car] PROGEN PR4",
       "model": "PROGEN PR4",
       "category": "PART OF THE DIAMOND CASINO HEIST",
       "price": 3515000,
       "seat": 1
     },
     {
-      "id": 4,
+      "id": "[car-list car] OCELOT R88",
       "model": "OCELOT R88",
       "category": "PART OF THE DIAMOND CASINO HEIST",
       "price": 3115000,

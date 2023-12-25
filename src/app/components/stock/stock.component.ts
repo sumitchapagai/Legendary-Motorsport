@@ -1,6 +1,6 @@
 import { Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
 import { Store } from 'src/app/service/store';
-import { car } from 'src/app/util/internalTypes';
+import { Car } from 'src/app/util/internalTypes';
 
 @Component({
   selector: 'app-stock',
@@ -10,7 +10,7 @@ import { car } from 'src/app/util/internalTypes';
 })
 export class StockComponent implements DoCheck {
   selectedFilter: string;
-  currentList!: car[];
+  currentList!: Car[];
 
   // length of currentList
   listCount: number;
@@ -38,7 +38,7 @@ export class StockComponent implements DoCheck {
 
   // get data from store
   ngOnInit(): void {
-    this.store.getList(this.selectedFilter).then((data: car[]) => {
+    this.store.getAll(this.selectedFilter).then((data: Car[]) => {
       this.currentList = data;
       this.listCount = this.currentList.length;
       this.updateScreenWidth();
@@ -47,7 +47,7 @@ export class StockComponent implements DoCheck {
 
   filterHandler(filter: string) {
     this.selectedFilter = filter;
-    this.store.getList(this.selectedFilter).then((data: car[]) => {
+    this.store.getAll(this.selectedFilter).then((data: Car[]) => {
       this.currentList = data;
       this.listCount = this.currentList.length;
       this.updateScreenWidth();

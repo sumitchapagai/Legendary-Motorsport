@@ -1,0 +1,14 @@
+{
+  "[car-list car] GROTTI TURISMO OMAGGIO": {
+    "model": "Turismo Omaggio",
+    "price": 2845000,
+    "description": "In a world where it often feels like the best you can hope for is an all-electric fap to some hybrid porn, Grotti's stunning farewell tribute to the mighty V8 is the booty call of your hot, heavy dreams. So sit back and strap in for one last breath of pure gasoline as you autograph the O-Zone for the final time.",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop.",
+    "statistics": {
+      "speed": 82.12,
+      "acceleration": 93.87,
+      "braking": 39.63,
+      "traction": 99.48
+    }
+  }
+}
