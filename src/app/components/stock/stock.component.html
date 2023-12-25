@@ -2,30 +2,27 @@
   <nav class="stock-nav">
     <ul class="stock-nav-list">
       <li>
-        <button class="stork-nav-btn" (click)="updateCurrentList('featured')">
+        <button class="stork-nav-btn" (click)="filterHandler('featured')">
           Featured
         </button>
       </li>
       <li>
-        <button class="stork-nav-btn" (click)="updateCurrentList('2 door')">
+        <button class="stork-nav-btn" (click)="filterHandler('2 door')">
           2 Doors
         </button>
       </li>
       <li>
-        <button class="stork-nav-btn" (click)="updateCurrentList('4 door')">
+        <button class="stork-nav-btn" (click)="filterHandler('4 door')">
           4 Doors
         </button>
       </li>
       <li>
-        <button
-          class="stork-nav-btn"
-          (click)="updateCurrentList('motorcycles')"
-        >
+        <button class="stork-nav-btn" (click)="filterHandler('motorcycles')">
           Motorcycles
         </button>
       </li>
       <li>
-        <button class="stork-nav-btn" (click)="updateCurrentList('special')">
+        <button class="stork-nav-btn" (click)="filterHandler('special')">
           Special
         </button>
       </li>
@@ -35,10 +32,9 @@
     <ng-container *ngIf="currentList; else currentListUndefined">
       <ol class="stock-section-list" #store>
         <div *ngFor="let currentItem of currentList">
-          <li>
+          <li [routerLink]="['details', currentItem.id]">
             <article class="card">
               <h2
-                [routerLink]="['details', currentItem.id]"
                 class="card-category"
                 [attr.data-title]="currentItem.category"
               ></h2>

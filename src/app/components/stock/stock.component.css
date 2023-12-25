@@ -37,6 +37,10 @@
   align-content: space-between;
 }
 
+.stock-section-list li {
+  cursor: pointer;
+}
+
 /*   Stock - Card   */
 
 .card {

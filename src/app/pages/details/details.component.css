@@ -1,0 +1,159 @@
+/*   Header   */
+header::before {
+  position: absolute;
+  background-color: goldenrod;
+  height: 20rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+}
+
+header {
+  width: var(--view-width);
+  background-color: rebeccapurple;
+  margin-inline: auto;
+  margin-top: 30vh;
+}
+
+.title-container {
+  grid-area: title;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.description-container {
+  min-height: 80vh;
+}
+
+.btn {
+  width: 40%;
+}
+
+/*  ||  Spacing - (DefaultStyles) */
+header {
+  padding-inline: var(--gap-inline);
+  padding-block: var(--gap-block);
+}
+
+.description-container {
+  margin-top: var(--gap-block);
+}
+
+.description-p {
+  margin-top: var(--gap-block);
+}
+
+.img {
+  margin-top: var(--gap-block);
+}
+
+.color-picker {
+  margin-top: var(--gap-block);
+}
+
+.color-container {
+  margin-top: var(--gap-block);
+}
+
+.color {
+  margin: 0.6rem 1.2rem;
+}
+
+.progress {
+  margin-top: var(--gap-block);
+}
+.progress-description {
+  margin-top: var(--gap-block);
+  margin-left: 1.2rem;
+}
+
+.btn {
+  margin-top: var(--gap-block);
+}
+
+/*  ||  Grid Section */
+
+.description-container {
+  display: grid;
+  column-gap: 1rem;
+  grid-template-areas:
+    "title title"
+    "description-p img"
+    "description-p img"
+    "color-picker img"
+    "progress img"
+    "btn img";
+}
+
+.description-p {
+  grid-area: description-p;
+}
+
+.img {
+  grid-area: img;
+}
+
+.color-picker {
+  grid-area: color-picker;
+}
+
+.progress {
+  grid-area: progress;
+}
+
+.btn {
+  grid-area: btn;
+}
+
+/*  color-picker    */
+.selected-border {
+  border: 3px solid gray;
+}
+
+.color-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.color {
+  display: inline-block;
+  border-radius: 50%;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}

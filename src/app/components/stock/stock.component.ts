@@ -45,7 +45,7 @@ export class StockComponent implements DoCheck {
     });
   }
 
-  updateCurrentList(filter: string) {
+  filterHandler(filter: string) {
     this.selectedFilter = filter;
     this.store.getList(this.selectedFilter).then((data: car[]) => {
       this.currentList = data;
