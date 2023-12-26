@@ -1,0 +1,10 @@
+.filter-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.filter-btn span {
+  background-color: var(--btn-color);
+  padding: 0.8rem 2.2rem;
+}

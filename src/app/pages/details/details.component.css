@@ -15,6 +15,7 @@ header {
   background-color: rebeccapurple;
   margin-inline: auto;
   margin-top: 30vh;
+  margin-bottom: 3rem;
 }
 
 .title-container {
@@ -119,41 +120,78 @@ header {
   width: 90%;
 }
 
-.color {
+input[name="color"] {
   display: inline-block;
   border-radius: 50%;
   min-width: 3rem;
   min-height: 3rem;
+  visibility: hidden;
+  position: relative;
 }
 
-.red {
+input[name="color"]:after {
+  min-width: 3rem;
+  min-height: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+input[data-id="color"]:checked:after {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: -4px;
+  top: -3px;
+  display: inline-block;
+  visibility: visible;
+  border: 4px solid rgb(100, 100, 100);
+}
+
+input[data-value="red"]:after {
   background-color: red;
 }
 
-.pink {
+input[data-value="pink"]:after {
   background-color: pink;
 }
 
-.yellow {
+input[data-value="yellow"]:after {
   background-color: yellow;
 }
 
-.gold {
+input[data-value="gold"]:after {
   background-color: gold;
 }
 
-.green {
+input[data-value="green"]:after {
   background-color: green;
 }
 
-.blue {
+input[data-value="blue"]:after {
   background-color: blue;
 }
 
-.black {
+input[data-value="black"]:after {
   background-color: black;
 }
 
-.white {
+input[data-value="white"]:after {
   background-color: white;
+}
+
+main {
+  width: var(--view-width);
+  margin-inline: auto;
+}
+
+.filter-container {
+  background-color: gold;
+  position: relative;
+}
+
+.filter-container {
+  top: 10%;
 }

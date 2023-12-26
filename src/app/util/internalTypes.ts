@@ -9,9 +9,10 @@ export type Car = {
 export type CarDetails = {
   model: string;
   price: number;
+  'prince-2'?: number;
   description: string;
-  conclusion: string;
-  statistics: {
+  conclusion?: string;
+  stats: {
     speed: number;
     acceleration: number;
     braking: number;

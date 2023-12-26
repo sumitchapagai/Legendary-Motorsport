@@ -8,10 +8,7 @@ header {
   place-content: end;
   padding-inline: var(--gap-inline);
   margin-block-end: var(--gap-block);
-}
-
-.header-filter-btn span {
-  padding: 2.2rem;
+  position: relative;
 }
 
 /*   Main   */

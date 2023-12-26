@@ -4,11 +4,265 @@
     "price": 2845000,
     "description": "In a world where it often feels like the best you can hope for is an all-electric fap to some hybrid porn, Grotti's stunning farewell tribute to the mighty V8 is the booty call of your hot, heavy dreams. So sit back and strap in for one last breath of pure gasoline as you autograph the O-Zone for the final time.",
     "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop.",
-    "statistics": {
+    "stats": {
       "speed": 82.12,
       "acceleration": 93.87,
       "braking": 39.63,
-      "traction": 99.48
+      "traction": 99.88
+    }
+  },
+  "[car-list car] PENAUD LA COUREUSE": {
+    "model": "La Coureuse",
+    "price": 1990000,
+    "description": "Ahh, La Coureuse. Known to Americans as 'Le Ride'. Back in the 70's it was the only French import you could admit to owning without bringing shame onto your family. Now it's undergone an electric-age overhaul from its spoiler to its air intakes, leaving it poised to raise its eyebrow suggestively and whisper 'voilà' as it drifts up and down your sweet spot. Bon voyage",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop",
+    "stats": {
+      "speed": 88.12,
+      "acceleration": 96.06,
+      "braking": 34.83,
+      "traction": 99.89
+    }
+  },
+  "[car-list car] BRAVADO BUFFALO EVX": {
+    "model": "Buffalo EVX",
+    "price": 2140000,
+    "description": "Do you spend your days fantasizing about the glory days of American car manufacture and your nights in sleepless anxiety about the climate apocalypse? Well, forget therapy, and forget compromise. Bravado's got you covered. Introducing the all-electric Buffalo EVX, a slice of lab-engineered muscle twitching at a thousand volts. It's got old school V8 looks, old school V8 power, and an old school V8 attitude. The fact that it's vegan friendly, carbon neutral, and the only noise it makes is a hypermodern whine can just be our dirty little secret.",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop.",
+    "stats": {
+      "speed": 92.36,
+      "acceleration": 97.04,
+      "braking": 36.71,
+      "traction": 99.99
+    }
+  },
+  "[car-list car] GROTTI ITALI GTO STINGE": {
+    "model": "Itali GTO Stinger TT",
+    "price": 2380000,
+    "description": "The Stinger TT is so overwhelmingly sensuous, tactile, and powerful, your first instinct might be to swipe right on the nearest hottie, get them in the passenger seat and let your horsepower do the talking. But now they're thumbing the controls, patting that plush premium leather, and asking to change the radio. And that's when it hits you: your days of swiping right are over. This is the only relationship you'll ever need. And as for your third wheel: time to break out the slick mines",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop.",
+    "stats": {
+      "speed": 88.25,
+      "acceleration": 99.0,
+      "braking": 37.63,
+      "traction": 80.0
+    }
+  },
+  "[car-list car] OCELOT VIRT": {
+    "model": "Virtue",
+    "price": 2235000,
+    "price-2": 2980000,
+    "description": "Meet the all-electric hypercar that comes track-steady and city ready, so you can show-off your climate awareness and your tax exile status from behind the same wheel. And if you get tired of know-it-alls pointing out the contradiction, simply equip it with some serious clap-backable accessories. Missile Lock-On Jammer, Remote Control Unit, Slick Mines and Armor Plating should bring a swift resolution to any debate",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop",
+    "stats": {
+      "speed": 86.07,
+      "acceleration": 85.98,
+      "braking": 44.24,
+      "traction": 99.96
+    }
+  },
+  "[car-list car] TOUNDRA PANTHERE": {
+    "model": "Panthere",
+    "price": 2170000,
+    "description": "A French lightweight sports car might seem like the automotive equivalent of a slimline cigarette, but don't let that put you off. This revival of an old classic still packs a killer punch. Stripped to the bone, she'll get you from zero to sixty faster than it takes a Frenchman to try and sleep with your wife",
+    "stats": {
+      "speed": 83.97,
+      "acceleration": 84.2,
+      "braking": 33.45,
+      "traction": 99.97
+    }
+  },
+  "[car-list car] CLASSIQUE BROADWAY": {
+    "model": "Broadway",
+    "price": 925000,
+    "description": "Let's face it. So far, the future has been a disappointment. We were promised commercial space travel and world peace. What we got was increasingly weird VR porn. And everything else pretty much sucked. So, why not buckle into the Broadway and head right back to a time before Rule 34 existed, and futuristic",
+    "conclusion": "design was still utopian sci-fi rather than doomsday chic?",
+    "stats": {
+      "speed": 63.02,
+      "acceleration": 44.82,
+      "braking": 11.92,
+      "traction": 60.07
+    }
+  },
+  "[car-list car] VAPID ALEUTIAN": {
+    "model": "Aleutian",
+    "price": 1835000,
+    "description": "With the cartels and the FIB both purchasing in bulk, the Vapid Aleutian has been the poster child of the war on drugs ever since it rolled off the production line. That's the kind of reliable consumer base that'll put the American car industry back on the map, and with optional Armor Plating, Slick Mines, a Remote Control Unit and Missile Lock-On Jammer, this is a revival you're going to want to be part of.",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop.",
+    "stats": {
+      "speed": 62.12,
+      "acceleration": 69.51,
+      "braking": 13.6,
+      "traction": 62.91
+    }
+  },
+  "[car-list car] OBEY OMNIS E-GT": {
+    "model": "omnis e-GT",
+    "price": 1795000,
+    "description": "Take a moment for mindfulness. Time to breathe, to reflect, to appreciate life's little joys. Like two AC synchronous electric motors and all-wheel drive. Or why not an optional Missile Lock-On Jammer, Remote Control Unit, Slick Mines, and Armor Plating? Just remember, it's not the number of breaths you take, but the number of mods that take your breath away. #blessed.",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop.",
+    "stats": {
+      "speed": 91.02,
+      "acceleration": 99.7,
+      "braking": 36.23,
+      "traction": 99.93
+    }
+  },
+  "[car-list car] GALLIVANTER BALLER ST": {
+    "model": "Baller ST",
+    "price": 687500,
+    "offer": 0.1,
+    "description": "Culture and Sandy Shores. Oral hygiene and CoK. Hardcore and SUV. Some words just don't go together. But now the badass Baller ST is here to smash those linguistic socio-linguistic glass ceilings along with the rear windshield of the car in front",
+    "stats": {
+      "speed": 74.65,
+      "acceleration": 53.99,
+      "braking": 20.0,
+      "traction": 57.96
+    }
+  },
+  "[car-list car] PFISTER ASTRON": {
+    "model": "Astron",
+    "price": 1580000,
+    "description": "Culture and Sandy Shores. Oral hygiene and CoK. Hardcore and SUV. Some words just don't go together. But now the badass Baller ST is here to smash those linguistic socio-linguistic glass ceilings along with the rear windshield of the car in front",
+    "stats": {
+      "speed": 80.0,
+      "acceleration": 83.18,
+      "braking": 17.31,
+      "traction": 66.13
+    }
+  },
+  "[car-list car] LAMPADATI CINQUEMILA": {
+    "model": "Cinquemila",
+    "price": 1740000,
+    "description": "A fierce luxury sedan, the slick Cinquemila has more torques than its drivers have connections with Liberty City mobs. (That's a lot of torques).",
+    "stats": {
+      "speed": 82.31,
+      "acceleration": 84.98,
+      "braking": 37.89,
+      "traction": 80.0
+    }
+  },
+  "[car-list car] ENUS JUBILEE": {
+    "model": "Jubilee",
+    "price": 1237500,
+    "description": "If you're the 1% of the 1% who leaves your mansion for the great outdoors, you need an SUV that's filled with the lux you're accustomed to. Luckily, the Jubilee can offer everything to keep you safe on the outside. Just the usual personal touches like machine guns, slick mines, or even a remote control unit so you never have to suffer contact with the real world again.",
+    "conclusion": "You can upgrade this vehicle with Imani Tech at an Agency Workshop",
+    "stats": {
+      "speed": 81.65,
+      "acceleration": 74.58,
+      "braking": 13.04,
+      "traction": 74.11
+    }
+  },
+  "[car-list car] WESTERN POWERSURGE": {
+    "model": "Powersurge",
+    "price": 1605000,
+    "description": "In the market for a toe-curling ride? Introducing the Western Powersurge, an all-electric plaything for the climate-curious biker. Yes, dumping out carbon is a thing of the past. Yes, the permanent-magnet motor brings torque to an instant climax. And yes, everyone deserves a little electro-erotic stimulation between the thighs",
+    "stats": {
+      "speed": 68.96,
+      "acceleration": 99.94,
+      "braking": 43.4,
+      "traction": 76.15
+    }
+  },
+  "[car-list car] WESTERN REEVER": {
+    "model": "Reever",
+    "price": 1900000,
+    "description": "This is it. The very pinnacle of human ingenuity. Centuries of innovation, strides in engineering, architecture, and masturbation, have all come together for the Reever, the power cruiser with a race engine designed to work just as well on the road as your crotch.",
+    "stats": {
+      "speed": 81.98,
+      "acceleration": 99.98,
+      "braking": 43.12,
+      "traction": 68.2
+    }
+  },
+  "[car-list car] NAGASAKI SHINOBI": {
+    "model": "Shinobi",
+    "price": 2480500,
+    "description": "The latest from the two-wheel powerhouse Nagasaki. With force like this, all you need to worry about is an overactive wet sump lubrication system. The bike will be fine",
+    "stats": {
+      "speed": 74.0,
+      "acceleration": 82.17,
+      "braking": 42.85,
+      "traction": 64.92
+    }
+  },
+  "[car-list car] NAGASAKI STRYD": {
+    "model": "Stryder",
+    "price": 502500,
+    "price-2": 670000,
+    "description": "Nagasaki once again proves that four wheels aren't necessary with their all new Stryder... but neither are two. Just give the engine a few powerful revs and you'll soon convince yourself there's no shame in adults riding trikes. No shame. Really. There's nothing weird about it. Not at all. Nada. Stop overthinking and buy it now.",
+    "stats": {
+      "speed": 74.98,
+      "acceleration": 89.29,
+      "braking": 40.0,
+      "traction": 77.21
+    }
+  },
+  "[car-list car] WESTERN RAMPANT ROCKET": {
+    "model": "Rampant Rocket",
+    "price": 925000,
+    "description": "There was a time when no respectable motorist would admit to owning a trike. It was a kink you worked out on your own, once everyone else was in bed, behind sound-proofed garage doors. And then one day the Rampant Rocket launched, and everything changed. Once that supercharger found its way between your legs, it was impossible to be discreet, and impossible to feel ashamed. This is what liberation looks like.",
+    "stats": {
+      "speed": 78.76,
+      "acceleration": 96.93,
+      "braking": 36.98,
+      "traction": 63.12
+    }
+  },
+  "[car-list car] NAGASAKI SHOTARO": {
+    "model": "Shotaro",
+    "price": 2225000,
+    "description": "Nagasaki's spaceflight division is responsible for some of the most stylish and combustible designs ever to crash into the Atlantic. So when the same team put together a motorcycle prototype, you can be sure it'll break rules, skulls and bank accounts from the minute it goes on sale.",
+    "conclusion": "Note: the production model has had all offensive and defensive capabilities decommissioned, including the energy trail.",
+    "stats": {
+      "speed": 87.98,
+      "acceleration": 99.83,
+      "braking": 46.98,
+      "traction": 82.43
+    }
+  },
+  "[car-list car] BENEFACTOR BRB": {
+    "model": "BR8",
+    "price": 3400000,
+    "description": "The original race version of the BRB was a complicated machine. Constructed from over four hundred separate controls, it required inhuman dexterity and a PhD in astrophysics just to start the engine, For the public, Benefactor have simplified this into a handful of brightly colored buttons and a colossal insurance premium. Killing yourself has never been so user-friendly",
+    "stats": {
+      "speed": 87.18,
+      "acceleration": 99.96,
+      "braking": 53.86,
+      "traction": 99.94
+    }
+  },
+  "[car-list car] DECLASSE DRI": {
+    "model": "DR1",
+    "price": 2997000,
+    "description": "Take a good look at the DRI and close your eyes. Do you feel faint from the smell of burning rubber? Is the intensity of the exhaust fumes making your hair fall out? Can you feel the splash of insects as they pass through your unprotected mouth and down your throat? Yes, yes and yes Now get inside and say that again, only faster. Much faster.",
+    "stats": {
+      "speed": 88.5,
+      "acceleration": 99.89,
+      "braking": 38.96,
+      "traction": 97.95
+    }
+  },
+  "[car-list car] PROGEN PR4": {
+    "model": "PR4",
+    "price": 3515000,
+    "description": "Okay, before you click off, we know what you're thinking. The power, the handling. the aerodynamics, they're all very well but what can you possibly do with as formidable an open wheel race car as the Progen PR4 on the city streets? You're the one us.",
+    "stats": {
+      "speed": 86.64,
+      "acceleration": 99.92,
+      "braking": 42.16,
+      "traction": 99.97
+    }
+  },
+  "[car-list car] OCELOT R88": {
+    "model": "R88",
+    "price": 3115000,
+    "description": "We could just keep saying 'ultra' and 'turbo' over and over but even these hardcore buzzwords can't do the Ocelot R88 justice. Instead, simply look at it. Look. Look again. Did you look? Then what are you waiting for?",
+    "stats": {
+      "speed": 85.76,
+      "acceleration": 99.97,
+      "braking": 42.88,
+      "traction": 98.0
     }
   }
 }

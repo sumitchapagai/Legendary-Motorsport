@@ -70,7 +70,7 @@
       "model": "OCELOT VIRT",
       "category": "PART OF LOS SANTOS DRUG WARS",
       "price": 2980000,
-      "price 2": 2235000,
+      "price-2": 2235000,
       "seat": 2
     },
     {
@@ -159,7 +159,7 @@
       "model": "NAGASAKI STRYD",
       "category": "PART OF THE DIAMOND CASINO HEIST",
       "price": 502500,
-      "price 2": 670000,
+      "price-2": 670000,
       "seat": 2
     },
     {

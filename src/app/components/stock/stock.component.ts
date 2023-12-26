@@ -10,6 +10,7 @@ import { Car } from 'src/app/util/internalTypes';
 })
 export class StockComponent implements DoCheck {
   selectedFilter: string;
+
   currentList!: Car[];
 
   // length of currentList

@@ -8,8 +8,13 @@
   </article>
   <section class="details description-container">
     <p class="description-p">
-      <span class="description-p-span1">{{ carDetails.description }}</span>
-      <span class="descriptionn-p-span2">
+      <span class="description-p-span1">{{
+        carDetails && carDetails.description
+      }}</span>
+      <span
+        *ngIf="carDetails && carDetails.conclusion"
+        class="descriptionn-p-span2"
+      >
         {{ carDetails.conclusion }}
       </span>
     </p>
@@ -19,10 +24,78 @@
         {{ "select from available colors to order" | uppercase }}
       </h2>
       <div class="color-container">
-        <span class="color red"></span><span class="color pink"></span
-        ><span class="color yellow"></span><span class="color gold"></span
-        ><span class="color green"></span><span class="color blue"></span
-        ><span class="color black"></span><span class="color white"></span>
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="red"
+          data-id="color"
+          data-value="red"
+          [(ngModel)]="selectedColor"
+        />
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="pink"
+          data-id="color"
+          data-value="pink"
+          [(ngModel)]="selectedColor"
+        />
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="yellow"
+          data-id="color"
+          data-value="yellow"
+          [(ngModel)]="selectedColor"
+        />
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="gold"
+          data-id="color"
+          data-value="gold"
+          [(ngModel)]="selectedColor"
+        />
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="green"
+          data-id="color"
+          data-value="green"
+          [(ngModel)]="selectedColor"
+        />
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="blue"
+          data-id="color"
+          data-value="blue"
+          [(ngModel)]="selectedColor"
+        />
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="white"
+          data-id="color"
+          data-value="white"
+          [(ngModel)]="selectedColor"
+        />
+        <input
+          class="color"
+          type="radio"
+          name="color"
+          value="black"
+          data-id="color"
+          data-value="black"
+          [(ngModel)]="selectedColor"
+        />
       </div>
     </article>
     <aside class="details stats">
@@ -49,5 +122,10 @@
   <ng-template #carDetailsUndefined><p>Loading...</p></ng-template>
 </header>
 <main>
-  <router-outlet></router-outlet>
+  <aside class="filter-container">
+    <app-filter [filterComponent]="stockComponent"></app-filter>
+  </aside>
+  <section>
+    <app-stock #stockComponent></app-stock>
+  </section>
 </main>
