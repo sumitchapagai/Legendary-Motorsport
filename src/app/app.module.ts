@@ -11,7 +11,13 @@ import { FormsModule } from '@angular/forms';
 import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, DetailsComponent, StockComponent, FilterComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    DetailsComponent,
+    StockComponent,
+    FilterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   bootstrap: [AppComponent],
 })

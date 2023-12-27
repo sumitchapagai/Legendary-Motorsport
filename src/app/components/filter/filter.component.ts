@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { StockComponent } from '../stock/stock.component';
 
@@ -8,6 +15,12 @@ import { StockComponent } from '../stock/stock.component';
   styleUrls: ['./filter.component.css'],
 })
 export class FilterComponent implements OnInit, AfterViewInit {
+  filterTypes: ['increment', 'decrement'] = ['increment', 'decrement'];
+  i: 0 | 1 = 1;
+
+  @Output() sortByEvent: EventEmitter<'increment' | 'decrement'> =
+    new EventEmitter<'increment' | 'decrement'>();
+
   @Input('filterComponent') stockComponent!: StockComponent;
 
   constructor(private activeRoute: ActivatedRoute) {}
@@ -22,5 +35,9 @@ export class FilterComponent implements OnInit, AfterViewInit {
         );
       }
     });
+  }
+
+  sortHandler() {
+    this.sortByEvent.emit(this.filterTypes[++this.i % 2]);
   }
 }

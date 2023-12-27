@@ -23,99 +23,13 @@
       <h2 class="color-picker-title">
         {{ "select from available colors to order" | uppercase }}
       </h2>
-      <div class="color-container">
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="red"
-          data-id="color"
-          data-value="red"
-          [(ngModel)]="selectedColor"
-        />
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="pink"
-          data-id="color"
-          data-value="pink"
-          [(ngModel)]="selectedColor"
-        />
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="yellow"
-          data-id="color"
-          data-value="yellow"
-          [(ngModel)]="selectedColor"
-        />
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="gold"
-          data-id="color"
-          data-value="gold"
-          [(ngModel)]="selectedColor"
-        />
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="green"
-          data-id="color"
-          data-value="green"
-          [(ngModel)]="selectedColor"
-        />
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="blue"
-          data-id="color"
-          data-value="blue"
-          [(ngModel)]="selectedColor"
-        />
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="white"
-          data-id="color"
-          data-value="white"
-          [(ngModel)]="selectedColor"
-        />
-        <input
-          class="color"
-          type="radio"
-          name="color"
-          value="black"
-          data-id="color"
-          data-value="black"
-          [(ngModel)]="selectedColor"
-        />
-      </div>
+      <!-- Bellow this Page COLOR-->
+      <ng-container *ngTemplateOutlet="colorContainer"></ng-container>
     </article>
-    <aside class="details stats">
+    <aside #statsContiner class="details stats">
       <h2 class="details stats-title">Vehicle Status</h2>
-      <p class="details stats-description">
-        <span class="details stats-description-title">Top Speed</span
-        ><span class="details stats-description-details"></span>
-      </p>
-      <p class="details stats-description">
-        <span class="details stats-description-title">Acceleration</span
-        ><span class="details stats-description-details"></span>
-      </p>
-      <p class="details stats-description">
-        <span class="details stats-description-title">Braking</span
-        ><span class="details stats-description-details"></span>
-      </p>
-      <p class="details stats-description">
-        <span class="details stats-description-title">Traction</span
-        ><span class="details stats-description-details"></span>
-      </p>
+      <!-- Bellow this page STATS-->
+      <ng-container *ngTemplateOutlet="stats"></ng-container>
     </aside>
   </section>
   <button class="details btn">order</button>
@@ -123,9 +37,108 @@
 </header>
 <main>
   <aside class="filter-container">
-    <app-filter [filterComponent]="stockComponent"></app-filter>
+    <app-filter
+      (sortByEvent)="sortEventHandler($event)"
+      [filterComponent]="stockComponent"
+    ></app-filter>
   </aside>
   <section>
-    <app-stock #stockComponent></app-stock>
+    <app-stock [sortBy]="sortBy" #stockComponent></app-stock>
   </section>
 </main>
+
+<!--  -->
+<ng-template #stats>
+  <p
+    #statsDescription
+    class="details stats-description"
+    *ngFor="let title of statTitles"
+  >
+    <span class="details stats-description-title">{{ title }}</span
+    ><span class="details stats-description-details">
+      <span id="a1"><span id="b1"></span></span>
+      <span id="a2"><span id="b2"></span></span>
+      <span id="a3"><span id="b3"></span></span>
+      <span id="a4"><span id="b4"></span></span>
+      <span id="a5"><span id="b5"></span></span>
+    </span>
+  </p>
+</ng-template>
+
+<!--  -->
+<ng-template #colorContainer>
+  <div class="color-container">
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="red"
+      data-id="color"
+      data-value="red"
+      [(ngModel)]="selectedColor"
+    />
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="pink"
+      data-id="color"
+      data-value="pink"
+      [(ngModel)]="selectedColor"
+    />
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="yellow"
+      data-id="color"
+      data-value="yellow"
+      [(ngModel)]="selectedColor"
+    />
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="gold"
+      data-id="color"
+      data-value="gold"
+      [(ngModel)]="selectedColor"
+    />
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="green"
+      data-id="color"
+      data-value="green"
+      [(ngModel)]="selectedColor"
+    />
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="blue"
+      data-id="color"
+      data-value="blue"
+      [(ngModel)]="selectedColor"
+    />
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="white"
+      data-id="color"
+      data-value="white"
+      [(ngModel)]="selectedColor"
+    />
+    <input
+      class="color"
+      type="radio"
+      name="color"
+      value="black"
+      data-id="color"
+      data-value="black"
+      [(ngModel)]="selectedColor"
+    />
+  </div>
+</ng-template>

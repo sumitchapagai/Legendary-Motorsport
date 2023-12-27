@@ -34,7 +34,7 @@
         <div *ngFor="let currentItem of currentList">
           <li
             [routerLink]="['/details', currentItem.id]"
-            [queryParams]="{ filter: selectedFilter }"
+            [queryParams]="{ filter: selectedFilter, sortBy }"
           >
             <article class="card">
               <h2

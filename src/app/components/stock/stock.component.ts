@@ -1,4 +1,12 @@
-import { Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
+import {
+  Component,
+  DoCheck,
+  ElementRef,
+  Input,
+  OnChanges,
+  SimpleChanges,
+  ViewChild,
+} from '@angular/core';
 import { Store } from 'src/app/service/store';
 import { Car } from 'src/app/util/internalTypes';
 
@@ -8,8 +16,10 @@ import { Car } from 'src/app/util/internalTypes';
   styleUrls: ['./stock.component.css'],
   providers: [Store],
 })
-export class StockComponent implements DoCheck {
+export class StockComponent implements DoCheck, OnChanges {
   selectedFilter: string;
+
+  @Input() sortBy: 'increment' | 'decrement' | undefined;
 
   currentList!: Car[];
 
@@ -39,16 +49,13 @@ export class StockComponent implements DoCheck {
 
   // get data from store
   ngOnInit(): void {
-    this.store.getAll(this.selectedFilter).then((data: Car[]) => {
-      this.currentList = data;
-      this.listCount = this.currentList.length;
-      this.updateScreenWidth();
-    });
+    this.filterHandler('featured');
   }
 
+  // Responsible for getting list of items with key of the selectedFilter
   filterHandler(filter: string) {
     this.selectedFilter = filter;
-    this.store.getAll(this.selectedFilter).then((data: Car[]) => {
+    this.store.getAll(this.selectedFilter, this.sortBy).then((data: Car[]) => {
       this.currentList = data;
       this.listCount = this.currentList.length;
       this.updateScreenWidth();
@@ -79,6 +86,13 @@ export class StockComponent implements DoCheck {
       (this.listCount && this.listCount !== this.currentList?.length)
     ) {
       throw new Error('Stock.component.ts ngDoCheck');
+    }
+  }
+
+  // Responsible for Sorting the currentList be the sortBy
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['sortBy']) {
+      this.filterHandler(this.selectedFilter);
     }
   }
 }

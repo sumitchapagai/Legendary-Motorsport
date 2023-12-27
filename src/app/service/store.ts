@@ -11,7 +11,10 @@ import { Car, CarDetails } from '../util/internalTypes';
 export class Store {
   constructor(private http: HttpClient) {}
 
-  getAll(filter: string): Promise<Car[]> {
+  public getAll(
+    filter: string,
+    strategy: 'increment' | 'decrement' | undefined
+  ): Promise<Car[]> {
     return new Promise((resolve) => {
       this.http
         .get('assets/data/car-list.json')
@@ -19,11 +22,23 @@ export class Store {
           take(1),
           map((list: any) => list[filter] as Car[])
         )
-        .subscribe((data) => resolve(data));
+        .subscribe((data) => {
+          // Sorting
+          switch (strategy) {
+            case 'increment':
+              resolve(data.sort((a: Car, b: Car) => a.price - b.price));
+              break;
+            case 'decrement':
+              resolve(data.sort((a: Car, b: Car) => b.price - a.price));
+              break;
+            default:
+              resolve(data);
+          }
+        });
     });
   }
 
-  getDetails(id: string): Promise<CarDetails> {
+  public getDetails(id: string): Promise<CarDetails> {
     return new Promise((resolve) => {
       this.http
         .get('assets/data/car-details.json')

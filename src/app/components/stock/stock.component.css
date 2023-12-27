@@ -31,10 +31,7 @@
 }
 
 .stock-section-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  column-count: 3;
 }
 
 .stock-section-list li {
