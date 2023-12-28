@@ -1,5 +1,8 @@
 <!-- Require a container with absolute position -->
 
 <button (click)="sortHandler()" class="filter-btn">
-  <span>Sort by Price</span><span>&mdash;</span>
+  <span class="text">Sort by Price</span>
+  <span class="caretup caret" *ngIf="currentFilter === 'increment'">V</span>
+  <span class="caretdown caret" *ngIf="currentFilter === 'decrement'">V</span>
+  <span class="caret" *ngIf="!currentFilter">&mdash;</span>
 </button>

@@ -1,10 +1,32 @@
 .filter-btn {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: calc(0.5rem + var(--gap-inline));
+  color: var(--text-color);
 }
 
-.filter-btn span {
+.filter-btn .text {
   background-color: var(--btn-color);
+  padding: 0.8rem 2rem;
+}
+
+.caret {
+  padding: 0.8rem 2.058rem;
+  font-weight: bolder;
+  font-size: 0.86rem;
+  color: var(--text-color);
+}
+
+.caretup {
+  display: inline-block;
   padding: 0.8rem 2.2rem;
+  font-size: 0.89rem;
+  transform: translateX(-8px);
+}
+
+.caretdown {
+  display: inline-block;
+  padding: 0.8rem 2.2rem;
+  font-size: 0.89rem;
+  transform: translateX(-8px) rotate(180deg);
 }

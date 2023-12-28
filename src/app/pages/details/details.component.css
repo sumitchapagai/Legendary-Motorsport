@@ -1,7 +1,41 @@
+.body-container::before {
+  background-image: url("../../../assets/images/headerbackground.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--header-top);
+  width: 100%;
+  content: "";
+  z-index: -1;
+}
+
+.body-container::after {
+  position: absolute;
+  top: var(--header-top);
+  left: 0;
+  height: var(--header-border-height);
+  width: 100%;
+  content: "";
+  z-index: -1;
+  background-color: rgba(159, 15, 15, 255);
+}
+
+.body-container {
+  background-color: var(--body-bg);
+  width: var(--view-width);
+  margin-inline: auto;
+  color: var(--text-color);
+  border-inline: 2px solid rgba(99, 11, 15, 255);
+}
+
 /*   Header   */
+.header-border {
+  border-top: 2px solid rgba(99, 11, 15, 255);
+}
+
 header::before {
   position: absolute;
-  background-color: goldenrod;
   height: 20rem;
   width: 100%;
   top: 0;
@@ -12,7 +46,6 @@ header::before {
 
 header {
   width: var(--view-width);
-  background-color: rebeccapurple;
   margin-inline: auto;
   margin-top: 30vh;
   margin-bottom: 3rem;
@@ -26,6 +59,7 @@ header {
 }
 
 .description-container {
+  overflow: auto;
   min-height: 80vh;
 }
 
@@ -188,7 +222,6 @@ main {
 }
 
 .filter-container {
-  background-color: gold;
   position: relative;
 }
 
@@ -214,7 +247,6 @@ main {
   min-width: 1.5rem;
   height: 5px;
   margin-inline: 3px;
-  background-color: rgba(255, 255, 255, 0.306);
   position: relative;
 }
 

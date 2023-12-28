@@ -1,52 +1,64 @@
-<header>
-  <article
-    *ngIf="carDetails; else carDetailsUndefined"
-    class="details title-container"
-  >
-    <h1 class="title">{{ carDetails.model }}</h1>
-    <p class="cost">${{ carDetails.price }}</p>
-  </article>
-  <section class="details description-container">
-    <p class="description-p">
-      <span class="description-p-span1">{{
-        carDetails && carDetails.description
-      }}</span>
-      <span
-        *ngIf="carDetails && carDetails.conclusion"
-        class="descriptionn-p-span2"
-      >
-        {{ carDetails.conclusion }}
-      </span>
-    </p>
-    <img class="details img" src="https://placehold.jp/400x400.png" />
-    <article class="details color-picker">
-      <h2 class="color-picker-title">
-        {{ "select from available colors to order" | uppercase }}
-      </h2>
-      <!-- Bellow this Page COLOR-->
-      <ng-container *ngTemplateOutlet="colorContainer"></ng-container>
+<div class="body-container" #stockBorder>
+  <header class="header-border">
+    <article
+      *ngIf="carDetails; else carDetailsUndefined"
+      class="details title-container"
+    >
+      <h1 class="title">{{ carDetails.model }}</h1>
+      <p class="cost">${{ carDetails.price }}</p>
     </article>
-    <aside #statsContiner class="details stats">
-      <h2 class="details stats-title">Vehicle Status</h2>
-      <!-- Bellow this page STATS-->
-      <ng-container *ngTemplateOutlet="stats"></ng-container>
-    </aside>
-  </section>
-  <button class="details btn">order</button>
-  <ng-template #carDetailsUndefined><p>Loading...</p></ng-template>
-</header>
-<main>
-  <aside class="filter-container">
-    <app-filter
-      (sortByEvent)="sortEventHandler($event)"
-      [filterComponent]="stockComponent"
-    ></app-filter>
+    <section class="details description-container">
+      <p class="description-p">
+        <span class="description-p-span1">{{
+          carDetails && carDetails.description
+        }}</span>
+        <span
+          *ngIf="carDetails && carDetails.conclusion"
+          class="descriptionn-p-span2"
+        >
+          {{ carDetails.conclusion }}
+        </span>
+      </p>
+      <img class="details img" src="https://placehold.jp/400x400.png" />
+      <article class="details color-picker">
+        <h2 class="color-picker-title">
+          {{ "select from available colors to order" | uppercase }}
+        </h2>
+        <!-- Bellow this Page COLOR-->
+        <ng-container *ngTemplateOutlet="colorContainer"></ng-container>
+      </article>
+      <aside #statsContiner class="details stats">
+        <h2 class="details stats-title">Vehicle Status</h2>
+        <!-- Bellow this page STATS-->
+        <ng-container *ngTemplateOutlet="stats"></ng-container>
+      </aside>
+    </section>
+    <button class="details btn">order</button>
+    <ng-template #carDetailsUndefined><p>Loading...</p></ng-template>
+  </header>
+  <main>
+    <div class="filter-border">
+      <aside class="filter-container">
+        <app-filter
+          (sortByEvent)="sortEventHandler($event)"
+          [filterComponent]="stockComponent"
+        ></app-filter>
+      </aside>
+    </div>
+    <section>
+      <app-stock [sortBy]="sortBy" #stockComponent></app-stock>
+    </section>
+  </main>
+</div>
+<footer>
+  <aside>
+    <img
+      src="../../../assets/images/footerbackground.jpg"
+      width="900"
+      height="100"
+    />
   </aside>
-  <section>
-    <app-stock [sortBy]="sortBy" #stockComponent></app-stock>
-  </section>
-</main>
-
+</footer>
 <!--  -->
 <ng-template #stats>
   <p

@@ -4,6 +4,7 @@ import {
   ElementRef,
   OnInit,
   QueryList,
+  ViewChild,
   ViewChildren,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -22,6 +23,8 @@ export class DetailsComponent implements OnInit, AfterViewInit {
 
   statTitles = ['Top Speed', 'Acceleration', 'Braking', 'Traction'];
   @ViewChildren('statsDescription') statsDescription!: QueryList<ElementRef>;
+
+  @ViewChild('stockBorder') stockBorder!: ElementRef;
 
   carDetails: CarDetails = {
     model: '',
@@ -48,9 +51,7 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.activeRoute.queryParams.subscribe((queryObj) => {
-      // = queryObj['filter'];
-    });
+    //this.stockBorder.nativeElement.classList.add('stock-border');
   }
 
   sortEventHandler(filterOption: 'increment' | 'decrement') {

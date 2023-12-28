@@ -1,9 +1,15 @@
-<header>
-  <app-filter (sortByEvent)="sortEventHandler($event)"></app-filter>
-</header>
-<app-stock [sortBy]="sortBy"></app-stock>
-<footer>
-  <!--   <aside>
-    <img src="../../../assets//images/footer.png" width="900" height="100" />
-  </aside> -->
-</footer>
+<div class="body-container">
+  <header>
+    <app-filter (sortByEvent)="sortEventHandler($event)"></app-filter>
+  </header>
+  <app-stock [sortBy]="sortBy"></app-stock>
+  <footer>
+    <aside>
+      <img
+        src="../../../assets/images/footerbackground.jpg"
+        width="900"
+        height="100"
+      />
+    </aside>
+  </footer>
+</div>

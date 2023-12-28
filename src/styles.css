@@ -23,15 +23,26 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
+button,
+input {
+  color: inherit;
+}
+
 /*  Variable  */
 :root {
-  --view-width: 71vw;
+  --view-width: 64vw;
   --gap-inline: 2rem;
   --gap-block: 0.5rem;
+  --header-top: 48vh;
+  --header-border-height: 0.2rem;
 
-  --btn-color: #ff0000;
+  --body-bg: rgba(33, 1, 4, 255);
+
+  --btn-color: #af0100;
   --btn-color-hover: #fff;
   --btn-color-selected: #ff0000;
+
+  --text-color: #eaeaea;
 }
 
 /*  Common Styles  */
@@ -43,5 +54,42 @@ button {
 }
 
 body {
-  background-color: #ff000056;
+  /*rgba(159, 15, 15, 255)*/
+  background-color: rgba(86, 12, 13, 255);
+}
+
+/* body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100rem;
+  content: "";
+  height: 100rem;
+  z-index: -10;
+} */
+
+/*  Stock  */
+.stock-border {
+  border: 2px solid rgba(99, 11, 15, 255);
+}
+
+/*   Footer   */
+
+footer {
+  position: relative;
+}
+
+footer::before {
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: rgba(159, 15, 15, 255);
+  content: "";
+}
+
+footer aside img {
+  width: 100%;
+  height: 10%;
 }

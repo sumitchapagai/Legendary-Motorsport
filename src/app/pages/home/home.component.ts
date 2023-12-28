@@ -1,7 +1,6 @@
 // home.component.ts
 
 import { Component } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +9,12 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 })
 export class HomeComponent {
   sortBy!: 'increment' | 'decrement';
+
+  ngAfterViewInit(): void {
+    /* this.activeRoute.queryParams.subscribe((queryObj) => {
+      // = queryObj['filter'];
+    }); */
+  }
 
   sortEventHandler(filterOption: 'increment' | 'decrement') {
     this.sortBy = filterOption;

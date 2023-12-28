@@ -1,3 +1,28 @@
+/*  Background  */
+
+.body-container::before {
+  background-image: url("../../../assets/images/headerbackground.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--header-top);
+  width: 100%;
+  content: "";
+  z-index: -1;
+}
+
+.body-container::after {
+  position: absolute;
+  top: var(--header-top);
+  left: 0;
+  height: var(--header-border-height);
+  width: 100%;
+  content: "";
+  z-index: -1;
+  background-color: rgba(159, 15, 15, 255);
+}
+
 /*   Header   */
 
 header {
@@ -13,12 +38,4 @@ header {
 
 /*   Main   */
 
-/*   Footer   */
-
-footer aside {
-}
-
-footer aside img {
-  width: 100%;
-  height: 10%;
-}
+/*  Footer[in style.css]  */

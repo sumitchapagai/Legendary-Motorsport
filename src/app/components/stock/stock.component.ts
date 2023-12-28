@@ -1,4 +1,5 @@
 import {
+  AfterViewInit,
   Component,
   DoCheck,
   ElementRef,
@@ -7,6 +8,7 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { Store } from 'src/app/service/store';
 import { Car } from 'src/app/util/internalTypes';
 
@@ -16,7 +18,7 @@ import { Car } from 'src/app/util/internalTypes';
   styleUrls: ['./stock.component.css'],
   providers: [Store],
 })
-export class StockComponent implements DoCheck, OnChanges {
+export class StockComponent implements DoCheck, OnChanges, AfterViewInit {
   selectedFilter: string;
 
   @Input() sortBy: 'increment' | 'decrement' | undefined;
@@ -40,9 +42,9 @@ export class StockComponent implements DoCheck, OnChanges {
    * */
 
   // Element stores the cars list (ol).
-  @ViewChild('store') storeElement!: ElementRef;
+  @ViewChild('stockBorder') stockBorder!: ElementRef;
 
-  constructor(private store: Store) {
+  constructor(private store: Store, private route: Router) {
     this.listCount = 0;
     this.selectedFilter = 'featured';
   }
@@ -50,6 +52,12 @@ export class StockComponent implements DoCheck, OnChanges {
   // get data from store
   ngOnInit(): void {
     this.filterHandler('featured');
+  }
+
+  ngAfterViewInit(): void {
+    if (this.route.url === '/' || this.route.url === 'home')
+      this.stockBorder.nativeElement.classList.add('stock-border');
+    else this.stockBorder.nativeElement.classList.remove('stock-border');
   }
 
   // Responsible for getting list of items with key of the selectedFilter

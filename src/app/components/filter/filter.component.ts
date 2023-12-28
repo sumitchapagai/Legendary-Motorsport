@@ -18,6 +18,8 @@ export class FilterComponent implements OnInit, AfterViewInit {
   filterTypes: ['increment', 'decrement'] = ['increment', 'decrement'];
   i: 0 | 1 = 1;
 
+  currentFilter: 'increment' | 'decrement' | undefined;
+
   @Output() sortByEvent: EventEmitter<'increment' | 'decrement'> =
     new EventEmitter<'increment' | 'decrement'>();
 
@@ -38,6 +40,7 @@ export class FilterComponent implements OnInit, AfterViewInit {
   }
 
   sortHandler() {
-    this.sortByEvent.emit(this.filterTypes[++this.i % 2]);
+    this.currentFilter = this.filterTypes[++this.i % 2];
+    this.sortByEvent.emit(this.currentFilter);
   }
 }

@@ -1,14 +1,19 @@
+.stock-container {
+  border-bottom: 2px solid rgba(99, 11, 15, 255);
+}
+
 /*   Stock   */
 
 .stock-container {
-  width: var(--view-width);
+  width: calc(var(--view-width) - 1rem);
   margin-inline: auto;
-  background-color: rebeccapurple;
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 
 .stock-nav {
   padding-inline: var(--gap-inline);
-  padding-block: var(--gap-block);
+  padding-block-start: var(--gap-block);
 }
 
 .stock-nav-list {
@@ -27,11 +32,12 @@
 
 .stock-section {
   padding-inline: var(--gap-inline);
-  padding-block: var(--gap-block);
 }
 
 .stock-section-list {
-  column-count: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .stock-section-list li {
@@ -43,17 +49,22 @@
 .card {
   display: inline-flex;
   flex-flow: column;
-  height: 200px;
-  background-color: gray;
-  margin-top: 1.2rem;
+  height: 240px;
+  width: 255px;
+  background-color: rgba(219, 217, 218, 255);
+  margin-top: 1rem;
 }
+
+/* ol.stock-section-list li:nth-child(-n + 3) {
+  margin-top: 0rem;
+} */
 
 /*   ||   Making Card Category 3 parts to add background 2 half's effect  */
 .card-category::before {
   height: 50%;
   width: 100%;
   content: "";
-  background-color: white;
+  background-color: #efeeec;
   position: absolute;
   left: 0;
 }
@@ -62,7 +73,8 @@
   display: inline;
   text-align: center;
   position: relative;
-  height: 22%;
+  height: 25%;
+  color: black;
 }
 
 .card-category::after {
@@ -80,12 +92,14 @@
 
 .card-img {
   height: 60%;
+  width: 255px;
 }
 
 .card-description-btn {
-  height: 18%;
+  height: 15%;
   width: 100%;
   display: flex;
+  background-color: #000000;
   justify-content: space-between;
 }
 
@@ -98,6 +112,6 @@
 }
 
 .card-btn {
-  width: 35%;
+  width: 50%;
   height: 100%;
 }

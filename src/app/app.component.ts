@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { Store } from './service/store';
 
 @Component({
@@ -7,6 +7,4 @@ import { Store } from './service/store';
   styleUrls: ['./app.component.css'],
   providers: [Store],
 })
-export class AppComponent {
-  constructor() {}
-}
+export class AppComponent {}
